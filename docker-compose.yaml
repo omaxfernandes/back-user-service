@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: back-user-service
+    ports:
+      - "8080:8080"
+    environment:
+      - GO_ENV=development
+    networks:
+      - back-user-net
+
+networks:
+  back-user-net:
+    driver: bridge

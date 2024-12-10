@@ -1,0 +1,14 @@
+# Ignore a pasta .git
+.git
+
+# Ignore binários e arquivos de compilação
+*.exe
+*.out
+*.log
+
+# Ignore arquivos específicos de IDEs
+.idea
+.vscode
+
+# Ignore a pasta de dependências do Go
+/vendor
